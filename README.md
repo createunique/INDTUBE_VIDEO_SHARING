@@ -2,21 +2,30 @@
 
 This admin panel provides functionality for managing videos. It includes features for login, registration, uploading videos, and resetting passwords.
 
-## Technologies Used
+## Technologies & Features Used
 
-### Frontend:
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
+The Video Management System leverages various technologies and features:
 
-### Backend:
-- PHP
-- MySQL
+### Frontend
+- **HTML, CSS, JavaScript:** Front-end technologies for creating a responsive and visually appealing user interface.
+- **Bootstrap:** Bootstrap is a front-end framework for building responsive and visually appealing websites and web applications using HTML, CSS, and JavaScript.
 
-### Libraries:
-- XLSX (for processing Excel files)
-- jQuery (for frontend interactions)
+### Backend
+- **PHP:** Server-side scripting language for dynamic content generation and database interaction.
+- **MySQL:** Relational database management system for storing and querying student and attendance records.
+
+### Libraries
+- **XLSX:** XLSX is a library for processing Excel files
+- **jQuery:**  jQuery is a JavaScript library for simplifying frontend interactions and manipulation of HTML documents.
+- **AJAX:** Asynchronous requests to update attendance records without refreshing the entire page, enhancing user experience.
+- **Sessions:** User authentication and session management to control access to dashboard features based on login status.
+- **Password Hashing:** Secure storage and verification of user passwords using bcrypt hashing algorithm, ensuring data privacy and security.
+
+The user interface of the Attendance System prioritizes simplicity, functionality, and responsiveness:
+
+- **Responsive Layout:** Built with Bootstrap for seamless adaptation to different screen sizes and devices.
+- **Clear Presentation:** Attendance details are presented clearly and organized, facilitating easy understanding and navigation.
+- **Intuitive Controls:** Buttons allow users to toggle attendance and save changes with ease, streamlining the attendance management process.
 
 ## Installation
 
