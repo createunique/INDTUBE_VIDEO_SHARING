@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             $mail->Port       = 465;                               // TCP port to connect to
 
             // Recipients
-            $mail->setFrom('tempkah01@gmail.com', 'INDTUBE');
+            $mail->setFrom('YOUR_GMAIL', 'INDTUBE');
             $mail->addAddress($user_email,$full_name);             // Add a recipient
 
             // Content
