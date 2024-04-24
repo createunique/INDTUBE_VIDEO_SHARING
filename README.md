@@ -1,6 +1,58 @@
-# IndTube - Video Sharing Platform
+# Admin Panel for Video Management
 
-IndTube is a web application that serves as a video sharing platform. It allows users to upload videos, categorize them, and view them based on different sections and subsections. The application has an admin panel for managing video content and user accounts.
+This admin panel provides functionality for managing videos. It includes features for login, registration, uploading videos, and resetting passwords.
+
+## Technologies Used
+
+- Frontend: HTML, CSS, Bootstrap
+- Backend: PHP
+- Database: MySQL
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/your-repository.git
+
+2. Import the database schema from database.sql into your MySQL database.
+3. Update includes/database.php with your MySQL database credentials.
+4. Install dependencies using Composer (for using PHP with Composer):
+composer install
+
+## Usage
+# Using Composer (recommended)
+1. Install PHP and Composer on your server.
+2. Create a new project:
+composer create-project your-username/your-repository
+
+3. Set up your web server to point to the public directory.
+4. Access the admin panel in your web browser.
+
+## Manual Download
+1. Download the repository as a ZIP file and extract it.
+2. Upload the extracted files to your web server.
+3. Set up your web server to point to the public directory.
+4. Access the admin panel in your web browser.
+## Features
+- Login: Users can log in using their email and password.
+- Registration: New users can register for an account.
+- Video Upload: Admins can upload videos using an Excel file.
+- Password Reset: Users can reset their password using a link sent to their email.
+##Files
+- index.php: Main file for the admin panel.
+- login.php: Login page for users.
+- registration.php: Registration page for new users.
+- videos.php: Page for managing and displaying videos.
+- reset_pass.php: Page for initiating the password reset process.
+- reset_password.php: File for handling the password reset process.
+- includes/: Directory containing PHP files for database connection and other functions.
+##Contributing
+Feel free to contribute to this project by submitting pull requests or reporting issues. Your feedback is highly appreciated.
+
+##License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Please replace `your-username` and `your-repository` with your actual GitHub username and repository name respectively. Also, make sure to replace the MySQL database credentials with your actual credentials in `includes/database.php`.
 
 ## Features
 
