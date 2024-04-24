@@ -24,7 +24,9 @@ This admin panel provides functionality for managing videos. It includes feature
 
 1. Clone the repository:
    
-2. ```bash
+2.
+
+```
 git clone https://github.com/your-username/your-repository.git
 ```
 
@@ -47,7 +49,7 @@ composer install
 
 2. Create a new project:
 
-```bash
+```
 composer create-project your-username/your-repository
 ```
 
