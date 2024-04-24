@@ -23,12 +23,29 @@ This admin panel provides functionality for managing videos. It includes feature
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/createunique/INDTUBE_VIDEO_SHARING.git
 ```
 
 2. Import the database schema from `database.sql` into your MySQL database.
 
 3. Update `includes/database.php` with your MySQL database credentials.
+
+4. **Update SMTP Details in `reset_password.php`:**
+
+   If you are using SMTP for sending password reset emails, you need to update the SMTP details in `reset_password.php` file:
+
+   ```php
+   // Replace the following SMTP details with your own SMTP configuration
+   $mail->Host       = 'smtp.gmail.com';                  // Set the SMTP server to send through
+   $mail->SMTPAuth   = true;                              // Enable SMTP authentication
+   $mail->Username   = 'YOUR_GMAIL';                       // SMTP username
+   $mail->Password   = 'GMAIL_PASSWORD';                   // SMTP password
+   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;        // Enable implicit TLS encryption
+   $mail->Port       = 465;                                // TCP port to connect to
+
+   $mail->setFrom('YOUR_GMAIL', 'INDTUBE');
+
+   Replace 'YOUR_GMAIL' with your Gmail address and 'GMAIL_PASSWORD' with your Gmail password. Update other SMTP details like Host, Port, and any other authentication settings according to your SMTP server configuration.
 
 ## Usage
 
@@ -64,6 +81,7 @@ composer require phpmailer/phpmailer
 
 6. Now you should have a directory structure like this in your project:
 
+```
 your-project-directory/
 ├── PHPMailer/
 │ ├── src/
@@ -72,6 +90,7 @@ your-project-directory/
 │ ├── database.php
 │ └── ...
 └── ...
+```
 
 7. Access the admin panel in your web browser.
 
