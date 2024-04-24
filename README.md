@@ -1,5 +1,3 @@
-markdown
-Copy code
 # Admin Panel for Video Management
 
 This admin panel provides functionality for managing videos. It includes features for login, registration, uploading videos, and resetting passwords.
@@ -19,6 +17,7 @@ This admin panel provides functionality for managing videos. It includes feature
 ### Libraries:
 - XLSX (for processing Excel files)
 - jQuery (for frontend interactions)
+
 
 ## Installation
 
@@ -50,7 +49,7 @@ composer install
 2. Create a new project:
 
 ```
-composer create-project your-username/your-repository
+composer create-project createunique/INDTUBE_VIDEO_SHARING
 ```
 
 3. Set up your web server to point to the public directory.
@@ -197,11 +196,6 @@ Please replace `your-username` and `your-repository` with your actual GitHub use
 - **Video Categorization**: Videos can be categorized into different sections and subsections.
 - **Responsive Design**: The application is designed to work well on various devices, including desktops, tablets, and smartphones.
 
-## Technologies Used
-
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **Backend**: PHP, MySQL
-- **Libraries**: XLSX (for processing Excel files), jQuery (for frontend interactions)
 
 ## Project Structure
 
@@ -212,23 +206,6 @@ The project consists of several files:
 - **registration.php**: This file contains the user registration form. It allows users to create an account with the platform.
 - **login.php**: This file contains the user login form. It allows registered users to log in to the platform.
 - **database.php**: This file contains the database configuration and connection code. It is included in other PHP files to interact with the database.
-
-## Installation and Setup
-
-To run the IndTube application locally, follow these steps:
-
-1. Clone the repository to your local machine.
-2. Import the `database.sql` file into your MySQL database to create the necessary tables.
-3. Update the database configuration in the `database.php` file with your MySQL credentials.
-4. Start a local web server (e.g., using XAMPP, WAMP, or MAMP).
-5. Open the application in your web browser and start using it.
-
-## Usage
-
-- To access the admin panel, go to the `index.php` file.
-- To view the videos uploaded by users, go to the `videos.php` file.
-- Use the registration form in `registration.php` to create a new user account.
-- Use the login form in `login.php` to log in to an existing user account.
 
 
 ## Acknowledgements
