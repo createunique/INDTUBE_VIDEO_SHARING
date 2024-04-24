@@ -11,7 +11,7 @@ This admin panel provides functionality for managing videos. It includes feature
 ## Installation
 
 1. Clone the repository:
-```bash
+
 git clone https://github.com/your-username/your-repository.git
 
 2. Import the database schema from database.sql into your MySQL database.
